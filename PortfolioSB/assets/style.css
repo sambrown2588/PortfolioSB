@@ -12,7 +12,7 @@ a {
 
 /* HEADER STYLES */
 header {
-    padding: 10px 10px;
+    padding: 5px 10px;
     background-color: var(--tert-color);
     display: flex;
     justify-content: space-between;
@@ -20,6 +20,11 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    z-index: 9999;
+}
+
+header a {
+    color: var(--prim-color);
 }
 
 header nav ul {
@@ -42,10 +47,10 @@ header nav ul li {
     justify-content: left;
     flex-wrap: wrap;
     background-image: url(./run-buddy.jpg);
-    background-repeat: no-repeat;
     background-size: 600px;
     background-position: left;
     padding: 100px 0px;
+    border: 3px solid var(--prim-color);
 }
 
 .description {
@@ -53,6 +58,35 @@ header nav ul li {
     background-color: var(--sec-color);
     color: var(--four-color);
     position: relative;
+}
+
+.minor-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px 0px;
+}
+
+.project2 {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    background-image: url(./conflict.png);
+    background-size: 100%;
+    background-position: center;
+    padding: 100px;
+    border: 3px solid var(--prim-color);
+}
+
+.project3 {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    background-image: url(./marketing.jpg);
+    background-size: 120%;
+    background-position: center;
+    padding: 100px;
+    border: 3px solid var(--prim-color);
 }
 
 /* ABOUT ME STYLES */
@@ -70,9 +104,16 @@ header nav ul li {
 }
 
 /* CONTACT STYLES */
+.contact {
+    text-align: center;
+    margin: 20px 0px;
+}
+
 address {
     display: flex;
     flex-wrap: wrap;
+    font-style: normal;
+    justify-content: center;
 }
 
 address div img {
@@ -80,3 +121,20 @@ address div img {
     height: 50px;
     padding: 0 5px;
 }
+
+/* Media query for desktop screen size */
+@media screen and (max-width: 768px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header nav ul li a{
+        font-size: 16px;
+    }
+
+    .intro div {
+        flex: 0 32%;
+        justify-content: center;
+    }
