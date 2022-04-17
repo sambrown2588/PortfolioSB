@@ -1,0 +1,82 @@
+:root {
+    --prim-color: black;
+    --sec-color: #CC0000;
+    --tert-color: #808080;
+    --four-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER STYLES */
+header {
+    padding: 10px 10px;
+    background-color: var(--tert-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
+
+/* PROJECT STYLES */
+.project1 {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    background-image: url(./run-buddy.jpg);
+    background-repeat: no-repeat;
+    background-size: 600px;
+    background-position: left;
+    padding: 100px 0px;
+}
+
+.description {
+    padding: 10px;
+    background-color: var(--sec-color);
+    color: var(--four-color);
+    position: relative;
+}
+
+/* ABOUT ME STYLES */
+.intro div {
+    display: flex;
+}
+
+.intro img{
+    width: 20%;
+}
+
+.intro p {
+    margin: auto;
+    margin-left: 5px;
+}
+
+/* CONTACT STYLES */
+address {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+address div img {
+    width: 50px;
+    height: 50px;
+    padding: 0 5px;
+}
